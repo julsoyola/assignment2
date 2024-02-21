@@ -4,3 +4,61 @@ Git Lab Tutorials
 Github Profile Made
 01/02/2020
 
+Github: https://github.com/julsoyola/assignment2/tree/master/docs 
+
+1. On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+2. git rev-list --count HEAD: 9
+
+3. git log -1 --format=%cd -- README.md : Tue Feb 20 23:23:19 2024 -0800
+
+4. Branches are used to organize new features, fixes, debuggig from varying 
+team members. 
+Also branches allow for efficient collaboration 
+
+5. git log shows the commit hisotry of the repo. This can include commit messages,
+authors and dates. 
+git status shows the current state of the working directory and the staging area, showing which files
+have been modified, added, or deleted since the last commit. 
+
+6. git log --pretty=oneline --abbrev-commit --stat -- Vehicle.h
+
+7. git log --grep="file"
+
+8. In the context of the OOP
+Inheritance (I): is a feature in OOP where a class or a subclass can inhirit 
+attributes and methods from another class (superclass). It can help with code 
+reusability and relationships between classes. 
+
+Polymorphism (II): This allows objects from other different classes to be treated
+as objects of a common superclass. 
+
+Encapsulation (III): This is the bundling of data and methods that operate on the data 
+into a single unit, known as a class. It hides the internal state of an object from the outside
+world and only exposes selected methofd to interact with the object. 
+
+9. What is the main difference between the “Dictator and Lieutenants” 
+workflow and the “Integration manager” workflow?
+- The main difference is how developers are pulling and pushing. In the Integration manager”
+workflow, devlopers have two repos. a public and private. They pull into there private account and push 
+to there public. This can allow a safeguard to push working code in smaller batches as you know 
+your public repo should be working minus your new changes. 
+VS the Dictator and Lieutenants workflow where devlopers use one repo. Pull from the main repo 
+and rather having a second repo to test on before sending it up, you send it up to the Lieu and 
+up to the dictator. The Integration workflow doesnt have a lieuteant at all. 
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow 
+instead of the “Centralized” workflow?
+- A centralized workflow leaves a lot of room for error. As devlopers push and pull, it can create
+commits and changes that don't recogonize other devlopers changes. This can make the shared repo to break 
+as differing commits can changes may not work with each other. Also developers pulling from this shared repo may get 
+outdated src as new devlopers are pusihing code that may not even work. a team of 100 developers would need
+a safeguard to push code at a time to ensure nothing breaks and all the code works together. That dependendies aren't challanged. 
